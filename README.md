@@ -6,7 +6,7 @@ Base image for gstreamer application
 - Ubuntu: `ubuntu-build`, `ubuntu-run`
 
 ## Editions
-- `dev` with gcc, libc, make, cmake and pkgconf for build; boost and gstreamer as libraries; rsync, ssh and gdb for debug 
+- `dev` with gcc, libc, make, cmake and pkgconf for build; boost, ggtest and gstreamer as libraries; rsync, ssh and gdb for debug 
 - `build` same as dev without debugging tools
 - `run` gstreamer and boost libraries only.
 
