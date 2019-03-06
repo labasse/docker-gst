@@ -1,6 +1,6 @@
 FROM alpine
 
 RUN apk update; \
-    apk add gstreamer
+    apk add --no-cache gstreamer
 
 EXPOSE 22
