@@ -1,6 +1,6 @@
 FROM alpine
 
 RUN apk update; \
-    apk add boost gstreamer
+    apk add gstreamer
 
 EXPOSE 22
