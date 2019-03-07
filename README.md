@@ -12,12 +12,10 @@ Base image for gstreamer application
 
 ## For `alpine-dev` only
 
-Environment variables are inherited from the base image, see [hermsi/alpine-sshd](https://hub.docker.com/r/hermsi/alpine-sshd).
-
 The exposed port is 22 for ssh 
 
 Example of use:
 ```
-docker run -d --rm -p 2222:22 -e ROOT_PASSWORD=sshpassword --security-opt seccomp:unconfined labasse/dev-gst
+docker run -d -p 2020:22 --security-opt seccomp:unconfined labasse/gst:alpine-dev
 ```
 The option `--security-opt seccomp:unconfined` avoid troubles with gdb remote debugging.
